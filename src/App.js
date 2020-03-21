@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div class="title">
-      Witaj!
+      Witaj na mojej stronie!
     </div>
   );
 }
