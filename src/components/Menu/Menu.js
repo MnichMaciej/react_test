@@ -1,10 +1,17 @@
 import React from 'react';
 import './Menu.scss';
 
-function Menu() {
+import Label from './Label';
+
+const Menu = () => {
   return (
-    <div class="Menu">
-     <div class="labelName">Menu</div> <i class="material-icons menuIco">dehaze</i>
+    <div className="Menu">
+        <div className="first label">
+            <div className="labelName">Menu</div>
+            <i className="material-icons menuIco">dehaze</i>
+        </div>
+        <Label to="/" ico="home">Home</Label>
+        <Label to="/two" ico="memory">Two</Label>
     </div>
   );
 }

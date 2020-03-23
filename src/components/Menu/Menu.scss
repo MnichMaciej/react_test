@@ -7,28 +7,52 @@
     transition: width .5s ease-in-out;
     -webkit-box-shadow: 9px 0px 12px -6px #000000;
     box-shadow: 9px 0px 12px -6px #000000;
-    .menuIco {
-        font-size: 3vw;
-        color: red;
-        float: right;
-        margin: .7vw 1vw;
-        transition: transform .5s ease-in-out;
-    }
-    .labelName {
-        display: inline-block;
-        width: 0;
-        color: black;
-        overflow: hidden;
-        transition: width .5s ease-in-out;
+    font-weight: 500;
+    cursor: default;
+    .label {
+        height: 5vw;
+        .menuIco {
+            font-size: 3vw;
+            color: red;
+            float: right;
+            margin: .7vw 1vw;
+            transition: transform .5s ease-in-out, color .5s ease-in-out;
+        }
+        .labelName {
+            text-align: center;
+            font-size: 2vw;
+            line-height: 4vw;
+            display: inline-block;
+            width: 0;
+            color: black;
+            overflow: hidden;
+            transition: width .5s ease-in-out, color .5s ease-in-out;
+            color: red;
+            margin-bottom: .5vw;
+        }
+        &.first {
+            background-color: $backgroundThirdColor;
+        }
+        // &:not(.first):hover {
+        //     background-color: red;
+        // }
     }
     &:hover {
         width: $menuMaxWidth;
-        .menuIco {
-            color: green;
-            transform: rotate(90deg);
-        }
-        .labelName {
-            width: 9vw;
+        .label {
+            .labelName {
+                width: 10vw;
+            }
+            &.first {
+                .menuIco {
+                    color: green;
+                    transform: rotate(90deg);
+                }
+                .labelName {
+                    color: green;
+                    width: 10vw;
+                }
+            }
         }
     }
 }
