@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+.Menu {
+    width: $menuWidth;
+    height: 100vh;
+    float: left;
+    background-color: $backgroundSecColor;
+    transition: width .5s ease-in-out;
+    .menuIco {
+        font-size: 3vw;
+        color: red;
+        float: right;
+        margin: .7vw 1vw;
+        transition: transform .5s ease-in-out;
+    }
+    &:hover {
+        width: $menuMaxWidth;
+        .menuIco {
+            color: green;
+            transform: rotate(90deg);
+        }
+    }
+}
