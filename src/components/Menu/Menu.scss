@@ -5,6 +5,8 @@
     float: left;
     background-color: $backgroundSecColor;
     transition: width .5s ease-in-out;
+    -webkit-box-shadow: 9px 0px 12px -6px #000000;
+    box-shadow: 9px 0px 12px -6px #000000;
     .menuIco {
         font-size: 3vw;
         color: red;
@@ -12,11 +14,21 @@
         margin: .7vw 1vw;
         transition: transform .5s ease-in-out;
     }
+    .labelName {
+        display: inline-block;
+        width: 0;
+        color: black;
+        overflow: hidden;
+        transition: width .5s ease-in-out;
+    }
     &:hover {
         width: $menuMaxWidth;
         .menuIco {
             color: green;
             transform: rotate(90deg);
+        }
+        .labelName {
+            width: 9vw;
         }
     }
 }

@@ -7,7 +7,7 @@ function App() {
   return (
     <div class="App">
       <Menu/>
-      Witaj na mojej stronie!
+      <center>Witaj na mojej stronie!</center>
     </div>
   );
 }

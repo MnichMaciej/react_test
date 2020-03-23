@@ -4,7 +4,7 @@ import './Menu.scss';
 function Menu() {
   return (
     <div class="Menu">
-      <i class="material-icons menuIco">dehaze</i>
+     <div class="labelName">Menu</div> <i class="material-icons menuIco">dehaze</i>
     </div>
   );
 }
