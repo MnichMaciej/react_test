@@ -4,6 +4,7 @@ import './Menu.scss';
 import Label from './Label';
 
 const Menu = () => {
+  
   return (
     <div className="Menu">
         <div className="first label">
