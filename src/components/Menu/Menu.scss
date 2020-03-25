@@ -39,8 +39,13 @@
             }
         }
         &:not(.first):hover {
-            -webkit-box-shadow: inset 0px 0px 50px 1px #252525;
-            box-shadow: inset 0px 0px 50px 1px #252525;
+            -webkit-box-shadow: inset 0px 0px 50px 1px $backgroundColor;
+            box-shadow: inset 0px 0px 50px 1px $backgroundColor;
+        }
+        &.current {
+            -webkit-box-shadow: inset 0px 0px 50px 1px $currentMenuColor;
+            box-shadow: inset 0px 0px 50px 1px $currentMenuColor;
+            cursor: default;
         }
     }
     &:hover {

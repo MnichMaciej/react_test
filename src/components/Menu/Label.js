@@ -1,16 +1,21 @@
 import React from 'react';
-import {Link } from 'react-router-dom';
+import {NavLink } from 'react-router-dom';
 
 import './Menu.scss';
 
-class Label extends React.Component {
-    render() {
 
+class Label extends React.Component {
+
+  
+
+    render() {
+        let path = this.props.path;
+        
         return (
-            <Link className={"label" + ('' === this.props.to ? 'active' : '')} to={this.props.to}>
+            <NavLink className={"label" + (path === this.props.to ? ' current' : '')} to={this.props.to}>
                 <div className="labelName">{this.props.children}</div>
                 <i className="material-icons menuIco">{this.props.ico}</i>
-            </Link>
+            </NavLink>
         )
     }
 }
