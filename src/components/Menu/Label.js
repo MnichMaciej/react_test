@@ -3,11 +3,7 @@ import {NavLink } from 'react-router-dom';
 
 import './Menu.scss';
 
-
 class Label extends React.Component {
-
-  
-
     render() {
         let path = this.props.path;
         

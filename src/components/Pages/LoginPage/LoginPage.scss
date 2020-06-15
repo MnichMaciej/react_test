@@ -1,0 +1,52 @@
+@import "../../../variables.scss";
+$fontSizeLog: 1.5vw;
+$buttonSize: 7vw;
+div.log {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding-top: 5vw;
+}
+
+p.smallCase {
+    margin: 0;
+    padding: 0;
+    font-size: $fontSizeLog;
+    &:not(:first-of-type) {
+        margin-top: 2vh;
+    }
+}
+
+input.log {
+    background-color: $backgroundSecColor;
+    border: 2px solid black;
+    color: white;
+    padding: 2px 5px;
+}
+
+div.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+input.button {
+    background-color: $backgroundSecColor;
+    width: $buttonSize;
+    height: $buttonSize;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: $buttonSize;
+    font-size: $fontSizeLog;
+    -webkit-box-shadow: 0px 0px 2vw .5vw rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 0px 0px 2vw .5vw rgba(0, 0, 0, 0.74);
+    box-shadow: 0px 0px 2vw .5vw rgba(0, 0, 0, 0.74);
+    transition: all .2s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+        border-color: green;
+        color: green;
+    }
+}

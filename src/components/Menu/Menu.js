@@ -5,15 +5,9 @@ import { withRouter } from 'react-router';
 import Label from './Label';
 
 class Menu extends React.Component {
-  // constructor(props){
-  //   super(props);
-  //   this.state = {path: "/"};
-  // }
-
-
+  
   render(){
     let path = this.props.location.pathname;
-    
     return (
        <div className="Menu">
         <div className="first label">
